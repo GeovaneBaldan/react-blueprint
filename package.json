@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "react-blueprint.helloWorld",
-        "title": "Hello World"
+        "command": "react-blueprint.generateComponent",
+        "title": "Blueprint: Generate Component"
       }
     ]
   },

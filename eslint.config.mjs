@@ -25,9 +25,9 @@ export default [
         },
       ],
 
-      curly: 'warn',
       eqeqeq: 'warn',
       'no-throw-literal': 'warn',
+      curly: ['error', 'multi-or-nest'],
 
       quotes: ['error', 'single'],
       semi: ['error', 'never'],
