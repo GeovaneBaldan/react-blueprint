@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "ignorePatterns": [],
+  "printWidth": 80,
+
+  "semi": false,
+  "jsdoc": true,
+  "singleQuote": true,
+  "arrowParens": "avoid",
+  "trailingComma": "none",
+  "quoteProps": "as-needed"
+}
