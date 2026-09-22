@@ -42,7 +42,36 @@
         "command": "react-blueprint.generateComponent",
         "title": "Blueprint: Generate Component"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "React Blueprint",
+      "properties": {
+        "boilerplate.platform": {
+          "type": "string",
+          "enum": [
+            "web",
+            "mobile"
+          ],
+          "default": null,
+          "description": "Target platform for the components"
+        },
+        "boilerplate.styleEngine": {
+          "type": "string",
+          "enum": [
+            "styled-components",
+            "tailwind",
+            "stylesheet"
+          ],
+          "default": null,
+          "description": "Which style engine to use"
+        },
+        "boilerplate.generateTests": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically generate test files"
+        }
+      }
+    }
   },
   "activationEvents": [],
   "engines": {
