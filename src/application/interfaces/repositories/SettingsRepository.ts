@@ -1,4 +1,7 @@
-import type { BoilerplateConfig, ExtensionSettings } from '../entities/settings'
+import type {
+  BoilerplateConfig,
+  ExtensionSettings
+} from '../../../domain/entities/settings'
 
 export interface SettingsRepository {
   getSettings(): ExtensionSettings

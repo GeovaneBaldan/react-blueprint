@@ -1,4 +1,4 @@
-import { BoilerplateConfig } from './BoilerplateConfig'
+import type { BoilerplateConfig } from './BoilerplateConfig'
 
 export interface ExtensionSettings {
   readonly boilerplate: BoilerplateConfig

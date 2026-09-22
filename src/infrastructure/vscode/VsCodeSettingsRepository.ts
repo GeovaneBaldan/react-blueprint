@@ -4,8 +4,8 @@ import type {
   BoilerplateConfig,
   ExtensionSettings
 } from '../../domain/entities/settings'
-import type { SettingsRepository } from '../../domain/repositories'
 import type { Platform, StyleEngine } from '../../domain/entities/settings'
+import type { SettingsRepository } from '../../application/interfaces/repositories'
 
 export class VsCodeSettingsRepository implements SettingsRepository {
   private cache: ExtensionSettings | null = null
