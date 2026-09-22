@@ -1,14 +1,9 @@
-import * as vscode from 'vscode'
+import type * as vscode from 'vscode'
+import { ExtensionBootstrap } from './bootstrap'
 
 export function activate(context: vscode.ExtensionContext) {
-  const disposable = vscode.commands.registerCommand(
-    'react-blueprint.helloWorld',
-    () => {
-      vscode.window.showInformationMessage('Hello World from React Blueprint!')
-    }
-  )
-
-  context.subscriptions.push(disposable)
+  const bootstrap = new ExtensionBootstrap(context)
+  bootstrap.initialize()
 }
 
 export function deactivate() {}
